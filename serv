@@ -1,0 +1,11 @@
+#!/bin/bash
+
+arg2=$(($2 + 0))
+while :
+do
+
+ftserver $1 $arg2
+arg2=$(($arg2+2))
+echo "Port selection is now $(($arg2)). Please increment port in client commands."
+
+done
